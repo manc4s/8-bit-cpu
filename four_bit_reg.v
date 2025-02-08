@@ -17,10 +17,10 @@ module four_bit_reg(
     
     //------------------------------------------------------------------
     //inout because its the bus. 
-    inout d0,
-    inout d1,
-    inout  d2,
-    inout  d3,   //represent 4 input in bus, controlled by switches incase i want to tweak the value being stored.
+    input d0,
+    input d1,
+    input  d2,
+    input  d3,   //represent 4 input in bus, controlled by switches incase i want to tweak the value being stored.
     
     output wire bus_led0,
     output wire bus_led1,

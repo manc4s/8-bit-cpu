@@ -2,10 +2,10 @@
 
 module d_flipflops_4input (
     input main_clock,
-    inout data0,
-    inout data1,
-    inout data2,
-    inout data3,
+    input data0,
+    input data1,
+    input data2,
+    input data3,
     input load_enable,  // New input to control when to load
     input enable,
     output reg q0,
@@ -51,10 +51,6 @@ module d_flipflops_4input (
     assign bus2 = last_data2;
     assign bus3 = last_data3;
 
-    // Bus output logic (Tristate or Holding Previous Value)
-    assign data0 = enable ? q0 : 1'bz;
-    assign data1 = enable ? q1 : 1'bz;
-    assign data2 = enable ? q2 : 1'bz;
-    assign data3 = enable ? q3 : 1'bz;
+    
 
 endmodule
