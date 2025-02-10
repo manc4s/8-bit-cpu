@@ -108,7 +108,7 @@ set_property IOSTANDARD LVCMOS33 [get_ports {load_enable_led}]
 
 
 
-#q3-10 outputs leds 9,8,7,6
+#q3-q0 outputs leds 9,8,7,6
 
 set_property PACKAGE_PIN U14 [get_ports {q0}]					
 set_property IOSTANDARD LVCMOS33 [get_ports {q0}]
